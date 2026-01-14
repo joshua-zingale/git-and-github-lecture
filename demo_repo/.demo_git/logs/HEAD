@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 49214b4bd27866bfc5f8cf1ace6905bc0c1b23f7 Joshua Zingale <jtzingale@gmail.com> 1768421450 -0800	commit (initial): added README.md
+49214b4bd27866bfc5f8cf1ace6905bc0c1b23f7 d18edce1fb33b41e99c4b0c63b359904b380497c Joshua Zingale <jtzingale@gmail.com> 1768421508 -0800	commit: Added first verse of Amazing Grace
+d18edce1fb33b41e99c4b0c63b359904b380497c d18edce1fb33b41e99c4b0c63b359904b380497c Joshua Zingale <jtzingale@gmail.com> 1768421607 -0800	checkout: moving from main to bob/final-verses
+d18edce1fb33b41e99c4b0c63b359904b380497c 11b5b9a2ba3c1b8b56a0b235366b6b6f216d7f49 Joshua Zingale <jtzingale@gmail.com> 1768421650 -0800	commit: second verse of Amazing Grace
+11b5b9a2ba3c1b8b56a0b235366b6b6f216d7f49 c6f169fb4dcd50da2b0d4701597014df4625de77 Joshua Zingale <jtzingale@gmail.com> 1768421692 -0800	commit: third verse of Amazing Grace
+c6f169fb4dcd50da2b0d4701597014df4625de77 d18edce1fb33b41e99c4b0c63b359904b380497c Joshua Zingale <jtzingale@gmail.com> 1768421702 -0800	checkout: moving from bob/final-verses to main
+d18edce1fb33b41e99c4b0c63b359904b380497c d18edce1fb33b41e99c4b0c63b359904b380497c Joshua Zingale <jtzingale@gmail.com> 1768421796 -0800	checkout: moving from main to tom/verse-formatting
+d18edce1fb33b41e99c4b0c63b359904b380497c d18edce1fb33b41e99c4b0c63b359904b380497c Joshua Zingale <jtzingale@gmail.com> 1768421949 -0800	checkout: moving from tom/verse-formatting to master
+d18edce1fb33b41e99c4b0c63b359904b380497c fb1e35e855c8b1c2faad9fde8a04f8e6dba6e966 Joshua Zingale <jtzingale@gmail.com> 1768422083 -0800	commit: Added compile script for poem
+fb1e35e855c8b1c2faad9fde8a04f8e6dba6e966 fb1e35e855c8b1c2faad9fde8a04f8e6dba6e966 Joshua Zingale <jtzingale@gmail.com> 1768422111 -0800	checkout: moving from master to tom/verse-formatting
+fb1e35e855c8b1c2faad9fde8a04f8e6dba6e966 f016c6e8f0430776a71624aea230e50e59f9a7b0 Joshua Zingale <jtzingale@gmail.com> 1768422197 -0800	commit: Added intra-verse linebreaks
