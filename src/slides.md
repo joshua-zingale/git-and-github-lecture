@@ -95,6 +95,13 @@ git push
 * **The "Linear" Advantage:** It makes the project history look like a straight line, making it much easier to read and debug.
 * **Pro Tip:** Use Rebase to keep your feature branch up-to-date with the latest changes from your team.
 
+
+---
+
+# Example of Rebased Branch
+![Git History with a rebased branch](images/git-history-with-rebase.png)\
+
+
 ---
 
 # GitHub: The Social Layer
