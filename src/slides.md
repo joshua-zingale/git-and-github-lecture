@@ -36,7 +36,7 @@
 ::: columns
 
 :::: {.column width="50%"}
-![git architecture showing git add, git commit, and git push taking source files on the local machine into a branch on the remote repository](images/git-architecture.png)
+![git architecture showing git add, git commit, and git push taking source files on the local machine into a branch on the remote repository](images/git-architecture.png)\
 ::::
 
 :::: {.column width="50%"}
