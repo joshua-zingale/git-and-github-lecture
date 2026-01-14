@@ -31,6 +31,38 @@
 
 ---
 
+# Git Architecture
+
+::: columns
+
+:::: {.column width="50%"}
+![git architecture showing git add, git commit, and git push taking source files on the local machine into a branch on the remote repository](images/git-architecture.png)
+::::
+
+:::: {.column width="50%"}
+## Typical workflow
+
+```bash
+# Download repo
+git clone <uri>
+
+# Edit file
+vim README.md
+
+# Track file
+git add README.md
+
+# Store fix locally
+git commit -m "grammar"
+
+# Store commit on remote
+git push
+```
+
+::::
+:::
+---
+
 # Core Concept: Commits & Rollbacks
 * **The Snapshot:** A "Commit" isn't just a save point; it's a snapshot of your entire project at a specific moment.
 * **The Hash:** Each commit has a unique ID.
@@ -70,3 +102,50 @@
 * **Collaboration:** Pull Requests (PRs) allow for code reviews and discussions before code is merged.
 * **Remote Backup:** Your code lives in the cloud, accessible from anywhere.
 * **Community:** Rife with open source software.
+
+---
+
+# GitHub Actions
+* Automate development processes by executing code on GitHub events.
+* Example events:
+    - push to branch
+    - opened pull-request to branch
+    - opened issue
+* Useful for Continuous Integration and Deployment (CI/CD)
+
+---
+
+# Example GitHub Action {.shrink}
+
+```yml
+#.github/workflows/compile-slides.yml
+name: Compile Slides
+on:
+    push:
+        branches:
+            - master
+permissions:
+  contents: write
+jobs:
+    Compile-Slides:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Updating apt
+              run: sudo apt-get update
+            - name: Installing pandoc
+              run: sudo apt-get install pandoc -y
+            - name: Installing pdflatex
+              run: sudo apt install texlive-latex-extra -y
+            - uses: actions/checkout@v5
+            - name: Compiling Slides
+              run: |
+                bash compile.bash
+            - name: Commit slides.pdf
+              run: |
+                git config --local user.email "github-actions[bot]@users.noreply.github.com"
+                git config --local user.name "github-actions[bot]"
+                git add -f slides.pdf
+                git commit -m "[chore] Compiled and saved slides" || echo "no changes"
+            - name: Push Commit
+              run: git push
+```
