@@ -10,7 +10,7 @@ with GitHub Actions. After the presentation is a short demonstration in a toy
 repository wherein the difference between merging and rebasing is elucidated.
 
 I first gave this lecture on January 14th, 2026 as a guest lecturer for a senior
-design course in UC Riverside computer-science department.
+design course for computer-science majors at UC Riverside.
 
 ## Content
 
