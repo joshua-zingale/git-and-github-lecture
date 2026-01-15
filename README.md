@@ -21,4 +21,4 @@ design course in UC Riverside computer-science department.
   merging and rebasing.
   - The `.git` file needed to be renamed to trick git into letting me store a
     git repository inside a git repository. To set up the demo repository,
-    execute `fixgit.bash` form inside [demo_repo/](demo_repo/).
+    execute `fixgit.bash` from inside [demo_repo/](demo_repo/).
